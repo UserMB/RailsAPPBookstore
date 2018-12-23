@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag 'application' %>
+
+<h2>What book are you looking for?</h2>
+<p><b>First Name:</b> <%= h @fname.capitalize %> </p>
+<p><b>Last Name:</b> <%= h @lname.capitalize %> </p>
+<%= form_tag('index', :method => 'get') do %>
+    <p> Book:
+      <%= text_field_tag 'book', @book_name %>
+    <p> Quantity:
+      <%= text_field_tag 'quantity', @book_quantity %>
+      <%= submit_tag 'send' %>
+<% end %>
+
+<% if @person.book_quantity then %>
+    <%=  link_to "Check In stock", :controller => "sign_up", :action => "order"  %></p>
+<% end %>

@@ -1,0 +1,10 @@
+<%= stylesheet_link_tag 'application' %>
+
+<h2> <%= @message %></h2>
+<h3>*Your order will be with you in 5 working days*</h3>
+
+<ul>
+  <% @entries.each do |entry| %>
+      <li> <%=h entry.first_name %>, <%=h entry.last_name %> , <%=h entry.book_name %>, <%=h entry.book_quantity %>,<%=h entry.id %></li>
+  <% end %>
+</ul>

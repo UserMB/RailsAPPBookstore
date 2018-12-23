@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag 'application' %>
+<h2>Order Details</h2>
+
+<h5> <%= link_to 'Please Check Stock before continuing', :controller => "sign_up", :action => "show" %> </h5>
+<p>  <%= @message %> </p>
+<b>First Name:</b> <%=h @person.first_name %> </p>
+<p> <b>Last Name:</b> <%=h @person.last_name %> </p>
+<p> <b>Book:</b> <%=h @person.book_name %> </p>
+<p> <b>Quantity:</b><%=h @person.book_quantity %> </p>
+<p> <b>Your ID:</b> <%=h @person.id %> </p>
+
+
+

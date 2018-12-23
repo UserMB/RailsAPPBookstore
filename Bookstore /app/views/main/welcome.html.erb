@@ -1,0 +1,7 @@
+<%= stylesheet_link_tag 'application' %>
+
+<h4> <%= @message %></h4>
+<p>Our online store has 2 books, order your book today and don't delay.</p>
+<%= link_to image_tag("sign_up.png"),
+            :controller => "sign_up", :action => "name" %>
+<p>(Click on the image)</p>

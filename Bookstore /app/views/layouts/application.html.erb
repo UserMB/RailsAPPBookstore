@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookstore</title>
+    <%= csrf_meta_tags %>
+
+  </head>
+
+  <body>
+  <div id="wrapper">
+
+    <%= image_tag "books.png" , :size => "500x150" %>
+    <h1>My Bookstore</h1>
+    <div>
+
+      <h5>
+      <%= link_to "Home", main_welcome_path%>
+      <%= link_to "SignUp", sign_up_name_path%>
+      <%= link_to "Books", books_main_path%>
+      </h5>
+
+
+
+
+    </div>
+    <%= yield %>
+  </div>
+  </body>
+</html>

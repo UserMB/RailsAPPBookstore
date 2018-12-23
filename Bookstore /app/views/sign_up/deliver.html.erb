@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag 'application' %>
+
+<h2>Order delivery details</h2>
+<p><b>First Name:</b> <%= h @fname.capitalize %> </p>
+<p><b>Last Name:</b> <%= h @lname.capitalize %> </p>
+
+<p> Address:
+<%= text_field_tag 'address', @address %>
+
+
+  <% if @person then %>
+      <%=  link_to "Finish", :controller => "main", :action => "goodbye"  %></p>
+  <% end %>

@@ -1,0 +1,10 @@
+<%= stylesheet_link_tag 'application' %>
+
+<h2>Check out the Book list</h2>
+<p><%= @message %></p>
+<%= link_to image_tag("ruby_on_rails.png", :size => "120x150",),
+            :controller => "books", :action => "book_prices" %>
+<br>
+<br>
+<%= link_to image_tag("ruby.png", :size => "120x150",),
+            :controller => "books", :action => "book_prices" %>

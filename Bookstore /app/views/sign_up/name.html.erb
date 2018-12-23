@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag 'application' %>
+
+<h4>SignUp</h4>
+
+<% if @fname then %>
+    <h3> Welcome <%= h @entry.first_name %>, let's go and
+      <%= link_to 'buy a book', :controller => "sign_up", :action => "index"  %>.</h3>
+<% end %>
+<p> Please enter your first and last name below: </p>
+
+<%= form_tag("name", :method => 'get') do %>
+    <p> First Name:
+      <%= text_field_tag 'fst_name' %>
+    <p> Last Name:
+      <%= text_field_tag 'lst_name' %>
+      <%= submit_tag 'send' %>
+<% end %>
+

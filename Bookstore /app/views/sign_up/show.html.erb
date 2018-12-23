@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag 'application' %>
+
+<h4>Show Stock</h4>
+
+<h5>  <%=h @message %> </h5>
+
+
+
+<h3> Would you like to add
+  <%= link_to 'Address Details', :controller => "sign_up", :action => "deliver" %> or
+  <%= link_to 'Change Book',  :controller => "sign_up", :action => "change"  %>
+</h3>
